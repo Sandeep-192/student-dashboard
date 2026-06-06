@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -13,7 +14,6 @@
   height: 100vh;
   background-color: #08142D;
   color: white;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
 }
 
 .main-content {
