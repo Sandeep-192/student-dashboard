@@ -1,0 +1,15 @@
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.todo-widget, .notes-widget, .pomodoro-timer, .study-hours-chart, .coding-progress-chart, .weather-widget {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}

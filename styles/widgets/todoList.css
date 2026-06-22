@@ -1,0 +1,41 @@
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+.todo-header button {
+  background-color: rgb(188, 24, 188);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.todo-tasks {
+  font-weight: 500;
+  margin-top: 24px;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px 0;
+  position: relative;
+}
+
+.task svg {
+  height: 16px;
+  position: absolute;
+  right: 0;
+}
+
+.task input {
+  accent-color: #22c55e;
+  height: 16px;
+  width: 16px;
+}
