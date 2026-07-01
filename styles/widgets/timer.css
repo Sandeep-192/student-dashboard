@@ -9,21 +9,41 @@
 }
 
 .timer-ring {
-  width: 180px;
-  height: 180px;
-  border: 10px solid #22c55e;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  margin: auto;
+}
+
+.rings {
+  width: 100%;
+  height: 100%;
+
+  transform: rotate(-90deg);
+}
+
+.bg-ring {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 12px;
+}
+
+.active-ring {
+  fill: none;
+  stroke: #22c55e;
+  stroke-width: 12px;
+  stroke-linecap: round;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 124;
 }
 
 .timer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .timer-content h1 {
@@ -37,8 +57,8 @@
 
 .timer-btn {
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 60px;
 }
 
 .start-btn, .reset-btn {
@@ -47,12 +67,12 @@
   border-radius: 6px;
   font-weight: 450;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .start-btn {
   background-color: rgb(26, 186, 26);
   color: white;
-  margin-right: 60px;
 }
 
 .reset-btn {
